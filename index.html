@@ -1,3 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Policía Municipal de Escazú | Seguridad Ciudadana</title>
+<meta name="description" content="Policía Municipal de Escazú - Comprometidos con la seguridad y el bienestar de todos los escazuceños. Servicio 24/7. Emergencias 1213.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+/* ===== EMERGENCY BANNER ===== */
+.emergency-banner {
+  background: linear-gradient(90deg, #dc2626, #b91c1c);
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  animation: pulse-red 2s infinite;
+}
+
+.emergency-banner a {
+  color: #fef08a;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+@keyframes pulse-red {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(220, 38, 38, 0); }
+}
+
+/* ===== TOP BAR ===== */
+.top-bar {
+  background: #0f172a;
+  color: #94a3b8;
+  padding: 8px 0;
+  font-size: 0.8rem;
+  margin-top: 42px;
+}
+
+.top-bar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.top-bar .social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.top-bar .social-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.top-bar .social-links a:hover {
+  color: #60a5fa;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 42px;
+  z-index: 999;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0;
+}
+
+.navbar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+.logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #475569;
+  text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
   transition: color 0.2s;
@@ -156,6 +302,29 @@
 .btn-instagram:hover {
   transform: translateY(-2px);
   opacity: 0.95;
+}
+
+.btn-youtube {
+  background: #ff0000;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
+.btn-youtube:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+}
+
+.btn-tiktok {
+  background: #000000;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.btn-tiktok:hover {
+  background: #1a1a1a;
+  transform: translateY(-2px);
 }
 
 /* ===== STATS ===== */
@@ -590,6 +759,15 @@
   background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
 }
 
+.social-card.youtube .icon {
+  background: #ff0000;
+}
+
+.social-card.tiktok .icon {
+  background: #000000;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
 .social-card h3 {
   font-size: 1.3rem;
   font-weight: 700;
@@ -631,6 +809,25 @@
 .social-card.instagram .btn-social:hover {
   transform: translateY(-2px);
   opacity: 0.95;
+}
+
+.social-card.youtube .btn-social {
+  background: #ff0000;
+}
+
+.social-card.youtube .btn-social:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+}
+
+.social-card.tiktok .btn-social {
+  background: #000000;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.social-card.tiktok .btn-social:hover {
+  background: #1a1a1a;
+  transform: translateY(-2px);
 }
 
 /* ===== INSTAGRAM REELS SECTION ===== */
@@ -902,6 +1099,15 @@
   background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
 }
 
+.footer-social .yt {
+  background: #ff0000;
+}
+
+.footer-social .tk {
+  background: #000000;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
 .footer-social a:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -1023,6 +1229,8 @@
     <div class="social-links">
       <a href="https://www.facebook.com/share/1PHrWaJJob/" target="_blank">📘 Facebook</a>
       <a href="https://www.instagram.com/policiamunicipalescazu" target="_blank">📷 Instagram</a>
+      <a href="https://youtube.com/@policiamunicipaldeescazu?si=AiDILCYipfiK7LDb" target="_blank">▶️ YouTube</a>
+      <a href="https://www.tiktok.com/@policiamunicipalescazu?_r=1&_d=f396958ck27g1j&sec_uid=MS4wLjABAAAAYHDJSxQSY96UEDOzGiirC9m3mh3ftOcslmfoBfcNYa9gH0gPV1HY6qX7gI68Y4en&share_author_id=6822120920988812293&sharer_language=es&source=h5_m&u_code=deim7m681hccjj&timestamp=1783779625&user_id=6877353758646404102&sec_user_id=MS4wLjABAAAAgQFWTR5Vat63zkl6RiWMpJMfZ-tbCGBqMi9H7B3qyXvRKO1fbQEKmsCtOAXWraxQ&item_author_type=2&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7658715337369929480&share_link_id=7d6f5b7e-5b74-4aee-b653-303503c5391d&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b6880%2Cb5836&social_share_type=5&share_enter_from=others_homepage&item_author_type=2&enable_checksum=1" target="_blank">🎵 TikTok</a>
     </div>
   </div>
 </div>
@@ -1057,6 +1265,8 @@
       <a href="tel:1213" class="btn btn-primary">📞 Llamar Emergencia 1213</a>
       <a href="https://www.facebook.com/share/1PHrWaJJob/" target="_blank" class="btn btn-facebook">📘 Síguenos en Facebook</a>
       <a href="https://www.instagram.com/policiamunicipalescazu" target="_blank" class="btn btn-instagram">📷 Síguenos en Instagram</a>
+      <a href="https://youtube.com/@policiamunicipaldeescazu?si=AiDILCYipfiK7LDb" target="_blank" class="btn btn-youtube">▶️ Síguenos en YouTube</a>
+      <a href="https://www.tiktok.com/@policiamunicipalescazu?_r=1&_d=f396958ck27g1j&sec_uid=MS4wLjABAAAAYHDJSxQSY96UEDOzGiirC9m3mh3ftOcslmfoBfcNYa9gH0gPV1HY6qX7gI68Y4en&share_author_id=6822120920988812293&sharer_language=es&source=h5_m&u_code=deim7m681hccjj&timestamp=1783779625&user_id=6877353758646404102&sec_user_id=MS4wLjABAAAAgQFWTR5Vat63zkl6RiWMpJMfZ-tbCGBqMi9H7B3qyXvRKO1fbQEKmsCtOAXWraxQ&item_author_type=2&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7658715337369929480&share_link_id=7d6f5b7e-5b74-4aee-b653-303503c5391d&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b6880%2Cb5836&social_share_type=5&share_enter_from=others_homepage&item_author_type=2&enable_checksum=1" target="_blank" class="btn btn-tiktok">🎵 Síguenos en TikTok</a>
     </div>
   </div>
 </section>
@@ -1264,6 +1474,18 @@
       <p>Fotos, reels y contenido exclusivo de nuestras operaciones</p>
       <a href="https://www.instagram.com/policiamunicipalescazu" target="_blank" class="btn-social">📸 Síguenos en Instagram</a>
     </div>
+    <div class="social-card youtube">
+      <div class="icon">▶️</div>
+      <h3>YouTube</h3>
+      <p>Videos de operaciones, capacitaciones y eventos de la PME</p>
+      <a href="https://youtube.com/@policiamunicipaldeescazu?si=AiDILCYipfiK7LDb" target="_blank" class="btn-social">▶️ Síguenos en YouTube</a>
+    </div>
+    <div class="social-card tiktok">
+      <div class="icon">🎵</div>
+      <h3>TikTok</h3>
+      <p>Contenido corto y dinámico de nuestras actividades</p>
+      <a href="https://www.tiktok.com/@policiamunicipalescazu?_r=1&_d=f396958ck27g1j&sec_uid=MS4wLjABAAAAYHDJSxQSY96UEDOzGiirC9m3mh3ftOcslmfoBfcNYa9gH0gPV1HY6qX7gI68Y4en&share_author_id=6822120920988812293&sharer_language=es&source=h5_m&u_code=deim7m681hccjj&timestamp=1783779625&user_id=6877353758646404102&sec_user_id=MS4wLjABAAAAgQFWTR5Vat63zkl6RiWMpJMfZ-tbCGBqMi9H7B3qyXvRKO1fbQEKmsCtOAXWraxQ&item_author_type=2&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7658715337369929480&share_link_id=7d6f5b7e-5b74-4aee-b653-303503c5391d&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b6880%2Cb5836&social_share_type=5&share_enter_from=others_homepage&item_author_type=2&enable_checksum=1" target="_blank" class="btn-social">🎵 Síguenos en TikTok</a>
+    </div>
   </div>
 </section>
 
@@ -1315,7 +1537,7 @@
     </div>
     <iframe 
       class="map-iframe"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.9!2d-84.1397!3d9.9186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fdf1d1a0e5c3%3A0x8fa0fdf1d1a0e5c3!2sIglesia%20de%20San%20Antonio%20de%20Escaz%C3%BA!5e0!3m2!1ses!2scr!4v1699999999999!5m2!1ses!2scr"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.8!2d-84.1404!3d9.9223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fdf1d1a0e5c3%3A0x8fa0fdf1d1a0e5c3!2sIglesia%20de%20San%20Antonio%20de%20Escaz%C3%BA!5e0!3m2!1ses!2scr!4v1699999999999!5m2!1ses!2scr"
       allowfullscreen="" 
       loading="lazy" 
       referrerpolicy="no-referrer-when-downgrade">
@@ -1364,6 +1586,8 @@
         <div class="footer-social">
           <a href="https://www.facebook.com/share/1PHrWaJJob/" target="_blank" class="fb" title="Facebook">📘</a>
           <a href="https://www.instagram.com/policiamunicipalescazu" target="_blank" class="ig" title="Instagram">📷</a>
+          <a href="https://youtube.com/@policiamunicipaldeescazu?si=AiDILCYipfiK7LDb" target="_blank" class="yt" title="YouTube">▶️</a>
+          <a href="https://www.tiktok.com/@policiamunicipalescazu?_r=1&_d=f396958ck27g1j&sec_uid=MS4wLjABAAAAYHDJSxQSY96UEDOzGiirC9m3mh3ftOcslmfoBfcNYa9gH0gPV1HY6qX7gI68Y4en&share_author_id=6822120920988812293&sharer_language=es&source=h5_m&u_code=deim7m681hccjj&timestamp=1783779625&user_id=6877353758646404102&sec_user_id=MS4wLjABAAAAgQFWTR5Vat63zkl6RiWMpJMfZ-tbCGBqMi9H7B3qyXvRKO1fbQEKmsCtOAXWraxQ&item_author_type=2&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7658715337369929480&share_link_id=7d6f5b7e-5b74-4aee-b653-303503c5391d&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b6880%2Cb5836&social_share_type=5&share_enter_from=others_homepage&item_author_type=2&enable_checksum=1" target="_blank" class="tk" title="TikTok">🎵</a>
         </div>
       </div>
     </div>
