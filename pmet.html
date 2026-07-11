@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Policía Municipal de Escazú | Seguridad Ciudadana</title>
+<meta name="description" content="Policía Municipal de Escazú - Comprometidos con la seguridad y el bienestar de todos los escazuceños. Servicio 24/7. Emergencias 1213.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+/* ===== EMERGENCY BANNER ===== */
+.emergency-banner {
+  background: linear-gradient(90deg, #dc2626, #b91c1c);
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  animation: pulse-red 2s infinite;
+}
+
+.emergency-banner a {
+  color: #fef08a;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+@keyframes pulse-red {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(220, 38, 38, 0); }
+}
+
+/* ===== TOP BAR ===== */
+.top-bar {
+  background: #0f172a;
+  color: #94a3b8;
+  padding: 8px 0;
+  font-size: 0.8rem;
+  margin-top: 42px;
+}
+
+.top-bar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.top-bar .social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.top-bar .social-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.top-bar .social-links a:hover {
+  color: #60a5fa;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 42px;
+  z-index: 999;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0;
+}
+
+.navbar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+.logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #475569;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #1d4ed8;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #1d4ed8;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #0f172a;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #1d4ed8 100%);
+  color: white;
+  padding: 100px 24px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.5;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-logo {
+  height: 160px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0 auto 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  border: 3px solid rgba(255,255,255,0.2);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.hero h1 span {
+  color: #60a5fa;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  color: #cbd5e1;
+  margin-bottom: 36px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #fbbf24;
+  color: #0f172a;
+  box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+}
+
+.btn-primary:hover {
+  background: #f59e0b;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(251, 191, 36, 0.4);
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+}
+
+.btn-facebook {
+  background: #1877f2;
+  color: white;
+  box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
+}
+
+.btn-facebook:hover {
+  background: #166fe5;
+  transform: translateY(-2px);
+}
+
+.btn-instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: white;
+  box-shadow: 0 4px 15px rgba(220, 39, 67, 0.3);
+}
+
+.btn-instagram:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+/* ===== STATS ===== */
+.stats-section {
+  background: white;
+  padding: 60px 24px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+  border-radius: 24px 24px 0 0;
+}
+
+.stats-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 24px;
+  border-radius: 16px;
+  background: #f8fafc;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 12px;
+  background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+/* ===== SECTIONS COMMON ===== */
+.section {
+  padding: 80px 24px;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 48px;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.section-header p {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+/* ===== SERVICES ===== */
+.services-section {
+  background: #f1f5f9;
+}
+
+.services-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s;
+  border: 1px solid #e2e8f0;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  border-color: #bfdbfe;
+}
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 24px;
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 14px;
+}
+
+.service-card:nth-child(1) .service-icon { background: #dbeafe; }
+.service-card:nth-child(2) .service-icon { background: #dcfce7; }
+.service-card:nth-child(3) .service-icon { background: #fef3c7; }
+.service-card:nth-child(4) .service-icon { background: #fce7f3; }
+.service-card:nth-child(5) .service-icon { background: #e0e7ff; }
+.service-card:nth-child(6) .service-icon { background: #ccfbf1; }
+
+.service-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.service-card p {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* ===== GALLERY CAROUSEL ===== */
+.gallery-section {
+  background: white;
+}
+
+.carousel-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  height: 500px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-slide .slide-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 30px 30px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+}
+
+.carousel-slide .slide-overlay h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.carousel-slide .slide-overlay p {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #0f172a;
+  transition: all 0.2s;
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.carousel-btn:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.prev { left: 16px; }
+.carousel-btn.next { right: 16px; }
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #cbd5e1;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.carousel-dot.active {
+  background: #1d4ed8;
+  width: 28px;
+  border-radius: 5px;
+}
+
+.carousel-thumbs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.carousel-thumb {
+  width: 80px;
+  height: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+  opacity: 0.6;
+}
+
+.carousel-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-thumb.active {
+  border-color: #1d4ed8;
+  opacity: 1;
+}
+
+/* ===== NEWS ===== */
+.news-section {
+  background: #f1f5f9;
+}
+
+.news-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.news-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s;
+  border: 1px solid #e2e8f0;
+}
+
+.news-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+.news-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 24px;
+}
+
+.news-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.news-badge.inauguracion { background: #dbeafe; color: #1d4ed8; }
+.news-badge.educativa { background: #dcfce7; color: #166534; }
+.news-badge.operativo { background: #fef3c7; color: #92400e; }
+
+.news-date {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.news-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.news-card p {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.news-readmore {
+  color: #1d4ed8;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s;
+}
+
+.news-readmore:hover {
+  gap: 10px;
+}
+
+/* ===== SOCIAL MEDIA SECTION ===== */
+.social-section {
+  background: linear-gradient(135deg, #0f172a, #1e3a5f);
+  color: white;
+  padding: 80px 24px;
+}
+
+.social-section .section-header h2 {
+  color: white;
+}
+
+.social-section .section-header p {
+  color: #94a3b8;
+}
+
+.social-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.social-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 32px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.social-card:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-4px);
+}
+
+.social-card .icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.8rem;
+}
+
+.social-card.facebook .icon {
+  background: #1877f2;
+}
+
+.social-card.instagram .icon {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.social-card p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.social-card .btn-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+.social-card.facebook .btn-social {
+  background: #1877f2;
+}
+
+.social-card.facebook .btn-social:hover {
+  background: #166fe5;
+  transform: translateY(-2px);
+}
+
+.social-card.instagram .btn-social {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-card.instagram .btn-social:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+/* ===== INSTAGRAM REELS SECTION ===== */
+.reels-section {
+  background: #f1f5f9;
+}
+
+.reels-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.reel-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s;
+}
+
+.reel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.reel-embed {
+  width: 100%;
+  aspect-ratio: 9/16;
+  border: none;
+  display: block;
+}
+
+.reel-info {
+  padding: 16px 20px;
+}
+
+.reel-info h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.reel-info p {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* ===== MAP ===== */
+.map-section {
+  background: white;
+}
+
+.map-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.map-info-bar {
+  background: linear-gradient(135deg, #0f172a, #1e3a5f);
+  color: white;
+  padding: 24px 32px;
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.map-info-bar h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.map-info-bar p {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.map-info-bar .inaug-date {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.map-iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 0 0 16px 16px;
+  display: block;
+}
+
+/* ===== CONTACT CARDS ===== */
+.contact-section {
+  background: #f1f5f9;
+}
+
+.contact-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  border: 1px solid #e2e8f0;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+}
+
+.contact-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin: 0 auto 14px;
+}
+
+.contact-card:nth-child(1) .contact-icon { background: #dbeafe; }
+.contact-card:nth-child(2) .contact-icon { background: #dcfce7; }
+.contact-card:nth-child(3) .contact-icon { background: #fef3c7; }
+.contact-card:nth-child(4) .contact-icon { background: #fce7f3; }
+
+.contact-card h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.contact-card p {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #0f172a;
+  color: #94a3b8;
+  padding: 60px 24px 30px;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.footer-brand img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.footer-brand h3 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.footer-brand p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+.footer-links h4 {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #64748b;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #60a5fa;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 24px;
+  border-top: 1px solid #1e293b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.8rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.footer-social .fb {
+  background: #1877f2;
+}
+
+.footer-social .ig {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.footer-social a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ===== EMERGENCY FLOAT BUTTON ===== */
+.emergency-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 64px;
+  height: 64px;
+  background: #dc2626;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.6rem;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(220, 38, 38, 0.5);
+  animation: pulse-red-float 2s infinite;
+  transition: transform 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.emergency-float:hover {
+  transform: scale(1.1);
+  background: #b91c1c;
+}
+
+.emergency-float .label {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0f172a;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.emergency-float:hover .label {
+  opacity: 1;
+}
+
+@keyframes pulse-red-float {
+  0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.6); }
+  70% { box-shadow: 0 0 0 20px rgba(220, 38, 38, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .news-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .social-grid { grid-template-columns: 1fr; }
+  .reels-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2rem; }
+  .hero-logo { height: 120px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: 1fr; }
+  .news-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .mobile-menu-btn { display: block; }
+  .carousel-wrapper { height: 300px; }
+  .carousel-thumbs { display: none; }
+  .map-info-bar { flex-direction: column; text-align: center; }
+  .emergency-float { width: 56px; height: 56px; font-size: 1.4rem; }
+  .reels-grid { grid-template-columns: 1fr; }
+  .social-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .hero-buttons { flex-direction: column; }
+  .hero-buttons .btn { width: 100%; justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- EMERGENCY BANNER -->
+<div class="emergency-banner">
+  🚨 EMERGENCIA: Llame al <a href="tel:1213">1213</a> — Policía Municipal de Escazú
+</div>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <span>📍 Escazú, San José, Costa Rica</span>
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/1PHrWaJJob/" target="_blank">📘 Facebook</a>
+      <a href="https://www.instagram.com/policiamunicipalescazu" target="_blank">📷 Instagram</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+      <img class="logo-img" src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783712701/FB_IMG_1783660544701_1_fslpze.jpg" alt="Logo PME">
+      Policía Municipal de Escazú
+    </div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#noticias">Noticias</a></li>
+      <li><a href="#social">Redes</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <img class="hero-logo" src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783712701/FB_IMG_1783660544701_1_fslpze.jpg" alt="Logo Policía Municipal de Escazú">
+    <h1>Policía Municipal <span>de Escazú</span></h1>
+    <p>Comprometidos con la seguridad y el bienestar de todos los escazuceños. Servicio las 24 horas, los 7 días de la semana.</p>
+    <div class="hero-buttons">
+      <a href="tel:1213" class="btn btn-primary">📞 Llamar Emergencia 1213</a>
+      <a href="https://www.facebook.com/share/1PHrWaJJob/" target="_blank" class="btn btn-facebook">📘 Síguenos en Facebook</a>
+      <a href="https://www.instagram.com/policiamunicipalescazu" target="_blank" class="btn btn-instagram">📷 Síguenos en Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="stats-grid">
+    <div class="stat-card fade-in">
+      <div class="stat-icon">🕐</div>
+      <div class="stat-number">24/7</div>
+      <div class="stat-label">Servicio permanente</div>
+    </div>
+    <div class="stat-card fade-in">
+      <div class="stat-icon">📊</div>
+      <div class="stat-number">80%</div>
+      <div class="stat-label">Reducción de delitos</div>
+    </div>
+    <div class="stat-card fade-in">
+      <div class="stat-icon">👥</div>
+      <div class="stat-number">4K+</div>
+      <div class="stat-label">Ciudadanos atendidos</div>
+    </div>
+    <div class="stat-card fade-in">
+      <div class="stat-icon">⭐</div>
+      <div class="stat-number">64</div>
+      <div class="stat-label">Reseñas positivas</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section services-section" id="servicios">
+  <div class="section-header fade-in">
+    <h2>Nuestros Servicios</h2>
+    <p>Ofrecemos una amplia gama de servicios para garantizar la seguridad y tranquilidad de nuestra comunidad.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card fade-in">
+      <img class="service-image" src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783710135/FB_IMG_1783709987276_qfaydw.jpg" alt="Patrullaje Preventivo">
+      <div class="service-content">
+        <div class="service-icon">🚔</div>
+        <h3>Patrullaje Preventivo</h3>
+        <p>Rondas continuas por todos los distritos de Escazú para prevenir delitos y mantener el orden público.</p>
+      </div>
+    </div>
+    <div class="service-card fade-in">
+      <img class="service-image" src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783713717/FB_IMG_1783713143449_b5pbdw.jpg" alt="Unidad K9">
+      <div class="service-content">
+        <div class="service-icon">🐕</div>
+        <h3>Unidad K9</h3>
+        <p>Caninos especializados en detección de sustancias, búsqueda y rescate, y apoyo en operativos.</p>
+      </div>
+    </div>
+    <div class="service-card fade-in">
+      <img class="service-image" src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783710135/FB_IMG_1783709987276_qfaydw.jpg" alt="Control de Tránsito">
+      <div class="service-content">
+        <div class="service-icon">🚦</div>
+        <h3>Control de Tránsito</h3>
+        <p>Regulación del tráfico vehicular, gestión de accidentes y educación vial para conductores.</p>
+      </div>
+    </div>
+    <div class="service-card fade-in">
+      <img class="service-image" src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783660919/FB_IMG_1783660527850_uzoy4k.jpg" alt="Programa Educativo">
+      <div class="service-content">
+        <div class="service-icon">🏫</div>
+        <h3>Programa Educativo</h3>
+        <p>Charlas de prevención en escuelas y colegios sobre seguridad vial, bullying y prevención de drogas.</p>
+      </div>
+    </div>
+    <div class="service-card fade-in">
+      <img class="service-image" src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783710150/FB_IMG_1783709980075_ejxwop.jpg" alt="Monitoreo CCTV">
+      <div class="service-content">
+        <div class="service-icon">📹</div>
+        <h3>Monitoreo CCTV</h3>
+        <p>Cámaras de vigilancia en puntos estratégicos con monitoreo en tiempo real las 24 horas.</p>
+      </div>
+    </div>
+    <div class="service-card fade-in">
+      <img class="service-image" src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783660910/FB_IMG_1783660544701_t72azq.jpg" alt="Atención Ciudadana">
+      <div class="service-content">
+        <div class="service-icon">🤝</div>
+        <h3>Atención Ciudadana</h3>
+        <p>Recepción de denuncias, orientación legal y acompañamiento a víctimas de delitos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY CAROUSEL -->
+<section class="section gallery-section" id="galeria">
+  <div class="section-header fade-in">
+    <h2>Galería de Operaciones</h2>
+    <p>Imágenes representativas de las operaciones y actividades de la Policía Municipal de Escazú.</p>
+  </div>
+  <div class="carousel-container fade-in">
+    <div class="carousel-wrapper" id="carouselWrapper">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide">
+          <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783710150/FB_IMG_1783709980075_ejxwop.jpg" alt="Monitoreo y Unidad K9">
+          <div class="slide-overlay">
+            <h3>Monitoreo y Unidad K9</h3>
+            <p>Vigilancia constante y apoyo canino en operaciones de seguridad</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783710135/FB_IMG_1783709987276_qfaydw.jpg" alt="Vigilancia y Tránsito">
+          <div class="slide-overlay">
+            <h3>Vigilancia y Control de Tránsito</h3>
+            <p>Monitoreo de vías y regulación del tráfico vehicular en Escazú</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783660910/FB_IMG_1783660544701_t72azq.jpg" alt="Operaciones PME">
+          <div class="slide-overlay">
+            <h3>Operaciones de Seguridad</h3>
+            <p>Trabajo constante por la seguridad de los escazuceños</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783660927/FB_IMG_1783660594879_szsvj9.jpg" alt="Patrullaje PME">
+          <div class="slide-overlay">
+            <h3>Patrullaje Preventivo</h3>
+            <p>Rondas de seguridad en todo el cantón de Escazú</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783660919/FB_IMG_1783660527850_uzoy4k.jpg" alt="Unidad PME">
+          <div class="slide-overlay">
+            <h3>Unidad Municipal</h3>
+            <p>Personal altamente capacitado al servicio de la comunidad</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783660920/FB_IMG_1783660585089_f0mjp1.jpg" alt="Comunidad PME">
+          <div class="slide-overlay">
+            <h3>Trabajo Comunitario</h3>
+            <p>Acercamiento con la comunidad escazuceña</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn prev" onclick="moveSlide(-1)">‹</button>
+    <button class="carousel-btn next" onclick="moveSlide(1)">›</button>
+    <div class="carousel-dots" id="carouselDots"></div>
+    <div class="carousel-thumbs" id="carouselThumbs"></div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="section news-section" id="noticias">
+  <div class="section-header fade-in">
+    <h2>Noticias y Crónicas</h2>
+    <p>Entérate de las últimas novedades y actividades de la Policía Municipal de Escazú.</p>
+  </div>
+  <div class="news-grid">
+    <div class="news-card fade-in">
+      <img class="news-image" src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783708661/Screenshot_20260709-231739_Facebook_cbk4vo.png" alt="Inauguración PME">
+      <div class="news-content">
+        <span class="news-badge inauguracion">Inauguración</span>
+        <div class="news-date">📅 17 de julio de 2026</div>
+        <h3>Inauguración de las nuevas instalaciones de la PME</h3>
+        <p>Con la presencia de autoridades municipales y vecinos, se inauguraron las modernas instalaciones que mejorarán la capacidad de respuesta operativa.</p>
+        <a href="#" class="news-readmore">Leer más →</a>
+      </div>
+    </div>
+    <div class="news-card fade-in">
+      <img class="news-image" src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783660919/FB_IMG_1783660527850_uzoy4k.jpg" alt="Visita educativa K9">
+      <div class="news-content">
+        <span class="news-badge educativa">Educativa</span>
+        <div class="news-date">📅 10 de julio de 2026</div>
+        <h3>Visita educativa con la Unidad K9 a escuelas de Escazú</h3>
+        <p>Los estudiantes conocieron de cerca el trabajo de los caninos policiales y aprendieron sobre seguridad ciudadana de forma interactiva.</p>
+        <a href="#" class="news-readmore">Leer más →</a>
+      </div>
+    </div>
+    <div class="news-card fade-in">
+      <img class="news-image" src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783711875/FB_IMG_1783711844650_fah9ey.jpg" alt="Operativo fin de año">
+      <div class="news-content">
+        <span class="news-badge operativo">Operativo</span>
+        <div class="news-date">📅 28 de diciembre de 2025</div>
+        <h3>Operativo de fin de año garantizó seguridad en todo el cantón</h3>
+        <p>Durante las festividades de fin de año, la PME desplegó un operativo especial que resultó en cero incidentes mayores reportados.</p>
+        <a href="#" class="news-readmore">Leer más →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA SECTION -->
+<section class="section social-section" id="social">
+  <div class="section-header fade-in">
+    <h2>Síguenos en Redes Sociales</h2>
+    <p>Mantente informado sobre nuestras operaciones, eventos y consejos de seguridad.</p>
+  </div>
+  <div class="social-grid fade-in">
+    <div class="social-card facebook">
+      <div class="icon">📘</div>
+      <h3>Facebook</h3>
+      <p>Noticias, eventos y comunicados oficiales de la PME</p>
+      <a href="https://www.facebook.com/share/1PHrWaJJob/" target="_blank" class="btn-social">👍 Síguenos en Facebook</a>
+    </div>
+    <div class="social-card instagram">
+      <div class="icon">📷</div>
+      <h3>Instagram</h3>
+      <p>Fotos, reels y contenido exclusivo de nuestras operaciones</p>
+      <a href="https://www.instagram.com/policiamunicipalescazu" target="_blank" class="btn-social">📸 Síguenos en Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM REELS SECTION -->
+<section class="section reels-section">
+  <div class="section-header fade-in">
+    <h2>Videos Destacados</h2>
+    <p>Reels de nuestras operaciones y actividades recientes.</p>
+  </div>
+  <div class="reels-grid fade-in">
+    <div class="reel-card">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DX0aWPXuH21/" data-instgrm-version="14" style=" width:100%; height:100%; min-height: 500px;">
+        <div style="padding:16px;">
+          <a href="https://www.instagram.com/reel/DX0aWPXuH21/" target="_blank">Ver en Instagram</a>
+        </div>
+      </blockquote>
+      <div class="reel-info">
+        <h4>Operación PME</h4>
+        <p>Video destacado de nuestras operaciones</p>
+      </div>
+    </div>
+    <div class="reel-card">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/Daiz6PPJG4i/" data-instgrm-version="14" style=" width:100%; height:100%; min-height: 500px;">
+        <div style="padding:16px;">
+          <a href="https://www.instagram.com/reel/Daiz6PPJG4i/" target="_blank">Ver en Instagram</a>
+        </div>
+      </blockquote>
+      <div class="reel-info">
+        <h4>Actividad Comunitaria</h4>
+        <p>Trabajo con la comunidad escazuceña</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="section map-section" id="ubicacion">
+  <div class="section-header fade-in">
+    <h2>Ubicación</h2>
+    <p>Encuéntranos en el corazón de Escazú, al costado norte de la Iglesia de San Antonio.</p>
+  </div>
+  <div class="map-container fade-in">
+    <div class="map-info-bar">
+      <div>
+        <h3>📍 Dirección</h3>
+        <p>Costado norte de la Iglesia de San Antonio de Escazú, San José, Costa Rica</p>
+      </div>
+      <div class="inaug-date">🏛️ Inaugurado: 17 de julio de 2026</div>
+    </div>
+    <iframe 
+      class="map-iframe"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.9!2d-84.1397!3d9.9186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fdf1d1a0e5c3%3A0x8fa0fdf1d1a0e5c3!2sIglesia%20de%20San%20Antonio%20de%20Escaz%C3%BA!5e0!3m2!1ses!2scr!4v1699999999999!5m2!1ses!2scr"
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contacto">
+  <div class="section-header fade-in">
+    <h2>Contacto</h2>
+    <p>Estamos aquí para ayudarte. Comunícate con nosotros por cualquiera de estos medios.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-card fade-in">
+      <div class="contact-icon">📞</div>
+      <h4>Teléfono</h4>
+      <p>2201-1213<br>Emergencias: 1213</p>
+    </div>
+    <div class="contact-card fade-in">
+      <div class="contact-icon">📧</div>
+      <h4>Correo</h4>
+      <p>info@pme.go.cr<br>pme@escazu.go.cr</p>
+    </div>
+    <div class="contact-card fade-in">
+      <div class="contact-icon">🕐</div>
+      <h4>Horario</h4>
+      <p>24 horas<br>Todos los días</p>
+    </div>
+    <div class="contact-card fade-in">
+      <div class="contact-icon">📍</div>
+      <h4>Dirección</h4>
+      <p>Costado norte<br>Iglesia San Antonio</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="https://res.cloudinary.com/dlz6uc574/image/upload/v1783712701/FB_IMG_1783660544701_1_fslpze.jpg" alt="Logo PME">
+      <div>
+        <h3>Policía Municipal de Escazú</h3>
+        <p>Comprometidos con la seguridad y el bienestar de todos los escazuceños. Servicio permanente las 24 horas del día.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/1PHrWaJJob/" target="_blank" class="fb" title="Facebook">📘</a>
+          <a href="https://www.instagram.com/policiamunicipalescazu" target="_blank" class="ig" title="Instagram">📷</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="#">Patrullaje</a></li>
+        <li><a href="#">Unidad K9</a></li>
+        <li><a href="#">Tránsito</a></li>
+        <li><a href="#">Monitoreo</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="#">Municipalidad</a></li>
+        <li><a href="#">Ministerio</a></li>
+        <li><a href="#">Transparencia</a></li>
+        <li><a href="#">Preguntas Frecuentes</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Términos</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Accesibilidad</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Policía Municipal de Escazú. Todos los derechos reservados.</span>
+    <span>🇨🇷 Costa Rica</span>
+  </div>
+</footer>
+
+<!-- EMERGENCY FLOAT BUTTON -->
+<a href="tel:1213" class="emergency-float" title="Llamar Emergencia 1213">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+  </svg>
+  <span class="label">EMERGENCIA 1213</span>
+</a>
+
+<!-- Instagram Embed Script -->
+<script async src="//www.instagram.com/embed.js"></script>
+
+<script>
+// ===== CAROUSEL =====
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const totalSlides = slides.length;
+let autoPlayInterval;
+
+function initCarousel() {
+  const dotsContainer = document.getElementById('carouselDots');
+  const thumbsContainer = document.getElementById('carouselThumbs');
+
+  for (let i = 0; i < totalSlides; i++) {
+    const dot = document.createElement('button');
+    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    dot.onclick = () => goToSlide(i);
+    dotsContainer.appendChild(dot);
+
+    const thumb = document.createElement('div');
+    thumb.className = 'carousel-thumb' + (i === 0 ? ' active' : '');
+    thumb.onclick = () => goToSlide(i);
+    const img = slides[i].querySelector('img').cloneNode();
+    thumb.appendChild(img);
+    thumbsContainer.appendChild(thumb);
+  }
+
+  startAutoPlay();
+
+  const wrapper = document.getElementById('carouselWrapper');
+  let startX = 0;
+  let isDragging = false;
+
+  wrapper.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+    stopAutoPlay();
+  });
+
+  wrapper.addEventListener('touchend', (e) => {
+    if (!isDragging) return;
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX - endX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) moveSlide(1);
+      else moveSlide(-1);
+    }
+    isDragging = false;
+    startAutoPlay();
+  });
+}
+
+function updateCarousel() {
+  const track = document.getElementById('carouselTrack');
+  track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+  document.querySelectorAll('.carousel-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === currentSlide);
+  });
+
+  document.querySelectorAll('.carousel-thumb').forEach((thumb, i) => {
+    thumb.classList.toggle('active', i === currentSlide);
+  });
+}
+
+function moveSlide(direction) {
+  currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+  updateCarousel();
+  resetAutoPlay();
+}
+
+function goToSlide(index) {
+  currentSlide = index;
+  updateCarousel();
+  resetAutoPlay();
+}
+
+function startAutoPlay() {
+  autoPlayInterval = setInterval(() => moveSlide(1), 5000);
+}
+
+function stopAutoPlay() {
+  clearInterval(autoPlayInterval);
+}
+
+function resetAutoPlay() {
+  stopAutoPlay();
+  startAutoPlay();
+}
+
+// ===== SCROLL ANIMATIONS =====
+function initScrollAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+}
+
+// ===== MOBILE MENU =====
+function toggleMobileMenu() {
+  const nav = document.querySelector('.nav-links');
+  nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+  nav.style.position = 'absolute';
+  nav.style.top = '72px';
+  nav.style.left = '0';
+  nav.style.right = '0';
+  nav.style.background = 'white';
+  nav.style.flexDirection = 'column';
+  nav.style.padding = '20px';
+  nav.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
+}
+
+// ===== INIT =====
+document.addEventListener('DOMContentLoaded', () => {
+  initCarousel();
+  initScrollAnimations();
+});
+</script>
+
+</body>
+</html>
